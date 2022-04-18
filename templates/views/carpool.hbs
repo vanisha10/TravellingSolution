@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+  * {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: lightgreen;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+}
+h1 {
+    letter-spacing: 1.5vw;
+    font-family: 'system-ui';
+    text-transform: uppercase;
+    text-align: center;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    width: 100%;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Mountains-1412683.svg/1280px-Mountains-1412683.svg.png) no-repeat center center;
+    background-size: cover;
+}
+
+.form_class {
+
+    width: 50%;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: white;
+    font-family: 'system-ui';
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+}
+.form_div {
+    text-transform: uppercase;
+}
+.form_div > label {
+    letter-spacing: 3px;
+    font-size: 1rem;
+}
+.info_div {
+    text-align: center;
+    margin-top: 20px;
+}
+.info_div {
+    letter-spacing: 1px;
+}
+.field_class_2 {
+    width: 35%;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 0px;
+    text-indent: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'system-ui';
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+.field_class {
+    width: 100%;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 0px;
+    text-indent: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'system-ui';
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+.submit_class {
+    border-style: none;
+    border-radius: 5px;
+    background-color: #FFE6D4;
+    padding: 8px 20px;
+    font-family: 'system-ui';
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
+    cursor: pointer;
+}
+footer {
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px -5px 10px rgb(0,0,0,0.3);
+}
+footer > p {
+    text-align: center;
+    font-family: 'system-ui';
+    letter-spacing: 3px;
+}
+footer > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+</style>
+
+<body>
+   {{>header}}
+<body>
+    <header>
+        <h1>Car Pooling</h1>
+    </header>
+    <main>
+        <form id="login_form" class="form_class" action="carpool" method="post">
+            <div class="form_div">
+
+      <label>Name</label>
+                <input class="field_class" name="name" type="text" placeholder="Enter your name" required>
+                  <label>Phone no</label>
+                <input class="field_class" name="phone_no" type="text" placeholder="Enter your Phone no" >
+      <div>
+    <label for="source">From </label>
+    <select  class="field_class_2" name="source" id="source" required>
+      <option>Santoshi Nagar</option>
+      <option>Magneto Mall</option>
+      <option>Ambuja Mall</option>
+      <option>Marine Drive</option>
+      <option>City Center Mall</option>
+      <option>Railway Station</option>
+      <option>Airport</option>
+      <option>MM Fun City </option>
+      <option>NIT Raipur</option>
+      <option>IIT Bhilai</option>
+    </select>
+   
+  
+    &nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;
+               
+    <label for="destination"> To</label>
+    <select  class="field_class_2 " name="destination" id="destination" required>
+      <option>Santoshi Nagar</option>
+      <option>Magneto Mall</option>
+      <option>Ambuja Mall</option>
+      <option>Marine Drive</option>
+      <option>City Center Mall</option>
+      <option>Railway Station</option>
+      <option>Airport</option>
+      <option>MM Fun City </option>
+      <option>NIT Raipur</option>
+      <option>IIT Bhilai</option>
+    </select>
+</div>
+
+<div>
+                <label for="time">Time</label>
+                <input class="field_class_2" name="time" type="time" required >
+                &nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;
+                 <label>Count</label>
+                <input class="field_class_2" name="count" type="text" placeholder="Number of people" required>
+                 </div>
+                 <label for="preferred_mode">Preferred Mode </label>
+    <select class="field_class" name="preferred_mode" id="prefered_mode">
+      <option>Cab/Taxi</option>
+      <option>Auto</option>
+     
+    </select>
+                <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">Submit</button>
+            </div>
+           
+        </form>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="#">JM_Code&trade;</a></p>
+    </footer>
+</body>
+
+</html>
+
