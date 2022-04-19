@@ -1,6 +1,6 @@
 
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -72,16 +72,23 @@ body{
 /* navbar */
 
 .navbar{
-    padding-bottom: 0.1rem;
+    padding-bottom: 4.5rem;
     padding-left: 0;
 }
 
+.navbar-brand{
+    font-family: ubuntu;
+    font-size:2.5rem;
+    font-weight: bold;
+   
+}
+
 .nav-item{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 .nav-link{
-    font-size: 0.2 rem;
+    font-size: 1.2rem;
     font-style:'Montserrat', sans-serif; 
     font-weight:300;
 }
@@ -178,31 +185,69 @@ body{
 }
    </style>
 <body>
+    {{>header}}
 
   <section id="title">
    <div class="container-fluid">
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-  <h1>Travelling Solution</h1>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="nav-link" href="#">Bus Location Tracker</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="carpool">Carpool</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="average">Get prices</a>
-          </li>
-      </ul>
-   </div>
-  </nav>
-  </div>
+    <!-- Title -->
+    <div class="row">
+    <div class="col-lg-6 col-sm-12">
+      <h1>Average Price for the given route is {{price}}</h1>
+      <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i>  Download</button>
+      <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+    </div>
+    <div class="col-lg-6 col-sm-12">
+      <img class="title-image" src="https://cliparting.com/wp-content/uploads/2016/05/Clip-art-of-car-clipart-image.png" alt="iphone-mockup">
+    </div>
+    </div>
+    </div>
+
   </section>
-  </body>
-  </html>
-  
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <i class="fas fa-check-circle fa-4x image1"></i>
+    <h3>Bus Tracker</h3>
+    <p>Now don't wait in scorching heat for the bus, Be smart...track the bus</p>
+    </div>
+
+    <div class=" feature-box col-lg-4">
+        <i class="fas fa-heart fa-4x image1"></i>
+      
+    <h3>Car Pool</h3>
+    <p>Why pay more...when you can find your perfect cab sharing partner</p>
+  </div>
+
+    <div class="feature-box col-lg-4">
+        <i class="fas fa-bullseye fa-4x image1"></i>
+    <h3>Get Prices</h3>
+    <p>Before going out don't forget to check the average auto fair to that place</p>
+  </div>
+
+  </div>
+
+  </section>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <a href="https://twitter.com/?lang=en" class="fab fa-twitter bottom-icon"></a>
+    <a href="https://www.facebook.com/" class="fab fa-facebook-f bottom-icon"></a>
+    <a href="https://www.instagram.com/" class="fab fa-instagram bottom-icon"></a>
+    <a href="https://mail.google.com/" class="fas fa-envelope bottom-icon"></a>
+    <p>© Copyright 2018 Travelling Solutions pvt Ltd</p>
+
+  </footer>
+
+
+</body>
+
+</html>
+

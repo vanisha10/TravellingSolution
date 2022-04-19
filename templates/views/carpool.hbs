@@ -1,30 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  
-	
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <style>
-  * {
-    padding: 0px;
-    margin: 0px;
-}
-body {
-    background-color: lightgreen;
-}
+    body {
+        background-color: #ff4c68;
 
-header {
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 15vh;
-    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
-}
-h1 {
+    }
+    h1 {
     letter-spacing: 1.5vw;
     font-family: 'system-ui';
     text-transform: uppercase;
@@ -35,9 +22,10 @@ main {
     align-items: center;
     justify-content: center;
     height: 75vh;
-    width: 100%;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Mountains-1412683.svg/1280px-Mountains-1412683.svg.png) no-repeat center center;
-    background-size: cover;
+     {{!-- background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Mountains-1412683.svg/1280px-Mountains-1412683.svg.png) no-repeat center center; --}}
+    
+     background-color:
+     background-size: cover;
 }
 
 .form_class {
@@ -60,6 +48,21 @@ main {
     text-align: center;
     margin-top: 20px;
 }
+.navbar{
+    padding-bottom: 0.1rem;
+    padding-left: 0;
+}
+
+.nav-item{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav-link{
+    font-size: 0.2 rem;
+    font-style:'Montserrat', sans-serif; 
+    font-weight:300;
+}
+
 .info_div {
     letter-spacing: 1px;
 }
@@ -76,6 +79,13 @@ main {
     font-size: 0.9rem;
     letter-spacing: 2px;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .field_class {
     width: 100%;
     border-radius: 6px;
@@ -103,33 +113,29 @@ main {
     box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
     cursor: pointer;
 }
-footer {
-    height: 10vh;
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: -5px -5px 10px rgb(0,0,0,0.3);
-}
-footer > p {
-    text-align: center;
-    font-family: 'system-ui';
-    letter-spacing: 3px;
-}
-footer > p > a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
 </style>
-
 <body>
-   {{>header}}
-<body>
-    <header>
-        <h1>Car Pooling</h1>
-    </header>
+        {{!-- <nav class="navbar navbar-expand-lg navbar-dark">
+  <h1>Travelling Solution</h1>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="#">Bus Location Tracker</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="carpool">Carpool</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="average">Get prices</a>
+          </li>
+      </ul>
+   </div>
+  </nav> --}}
+ 
+  
     <main>
         <form id="login_form" class="form_class" action="carpool" method="post">
             <div class="form_div">
@@ -189,10 +195,10 @@ footer > p > a {
            
         </form>
     </main>
-    <footer>
-        <p>Desenvolvido por <a href="#">JM_Code&trade;</a></p>
-    </footer>
+    <div>
+        <p></p>
+        <img src="https://cliparting.com/wp-content/uploads/2016/05/Clip-art-of-car-clipart-image.png" class="center"></div>
+         
+      </div>
 </body>
-
 </html>
-
