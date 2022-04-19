@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,194 +12,168 @@
         background-color: #ff4c68;
 
     }
-    h1 {
-    letter-spacing: 1.5vw;
-    font-family: 'system-ui';
-    text-transform: uppercase;
-    text-align: center;
-}
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 75vh;
-     {{!-- background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Mountains-1412683.svg/1280px-Mountains-1412683.svg.png) no-repeat center center; --}}
-    
-     background-color:
-     background-size: cover;
-}
 
-.form_class {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75vh;
+        padding: 40 px 40 px 40 px;
+        background-color:#ff4c68,
+        background-size: cover;
+    }
 
-    width: 50%;
-    padding: 40px;
-    border-radius: 8px;
-    background-color: white;
-    font-family: 'system-ui';
-    box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
-}
-.form_div {
-    text-transform: uppercase;
-}
-.form_div > label {
-    letter-spacing: 3px;
-    font-size: 1rem;
-}
-.info_div {
-    text-align: center;
-    margin-top: 20px;
-}
-.navbar{
-    padding-bottom: 0.1rem;
-    padding-left: 0;
-}
+    .form_class {
 
-.nav-item{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.nav-link{
-    font-size: 0.2 rem;
-    font-style:'Montserrat', sans-serif; 
-    font-weight:300;
-}
+        width: 100%;
+        padding: 40px 40px 40px;
+        border-radius: 8px;
+        background-color: white;
+        font-family: 'system-ui';
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+    }
 
-.info_div {
-    letter-spacing: 1px;
-}
-.field_class_2 {
-    width: 35%;
-    border-radius: 6px;
-    border-style: solid;
-    border-width: 1px;
-    padding: 5px 0px;
-    text-indent: 6px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-family: 'system-ui';
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+    .form_div {
+        text-transform: uppercase;
+    }
 
-.field_class {
-    width: 100%;
-    border-radius: 6px;
-    border-style: solid;
-    border-width: 1px;
-    padding: 5px 0px;
-    text-indent: 6px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-family: 'system-ui';
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-}
-.submit_class {
-    border-style: none;
-    border-radius: 5px;
-    background-color: #FFE6D4;
-    padding: 8px 20px;
-    font-family: 'system-ui';
-    text-transform: uppercase;
-    letter-spacing: .8px;
-    display: block;
-    margin: auto;
-    margin-top: 10px;
-    box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
-    cursor: pointer;
-}
+    .form_div>label {
+        letter-spacing: 3px;
+        font-size: 1rem;
+    }
+
+    .info_div {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .info_div {
+        letter-spacing: 1px;
+    }
+
+    .field_class_2 {
+        width: 35%;
+        border-radius: 6px;
+        border-style: solid;
+        border-width: 1px;
+        padding: 5px 0px;
+        text-indent: 6px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: 'system-ui';
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .field_class {
+        width: 100%;
+        border-radius: 6px;
+        border-style: solid;
+        border-width: 1px;
+        padding: 5px 0px;
+        text-indent: 6px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: 'system-ui';
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+    }
+
+    .submit_class {
+        border-style: none;
+        border-radius: 5px;
+        background-color: #FFE6D4;
+        padding: 8px 20px;
+        font-family: 'system-ui';
+        text-transform: uppercase;
+        letter-spacing: .8px;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
 </style>
+
 <body>
-        {{!-- <nav class="navbar navbar-expand-lg navbar-dark">
-  <h1>Travelling Solution</h1>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="nav-link" href="#">Bus Location Tracker</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="carpool">Carpool</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="average">Get prices</a>
-          </li>
-      </ul>
-   </div>
-  </nav> --}}
- 
-  
-    <main>
-        <form id="login_form" class="form_class" action="carpool" method="post">
-            <div class="form_div">
 
-      <label>Name</label>
-                <input class="field_class" name="name" type="text" placeholder="Enter your name" required>
-                  <label>Phone no</label>
-                <input class="field_class" name="phone_no" type="text" placeholder="Enter your Phone no" >
-      <div>
-    <label for="source">From </label>
-    <select  class="field_class_2" name="source" id="source" required>
-      <option>Santoshi Nagar</option>
-      <option>Magneto Mall</option>
-      <option>Ambuja Mall</option>
-      <option>Marine Drive</option>
-      <option>City Center Mall</option>
-      <option>Railway Station</option>
-      <option>Airport</option>
-      <option>MM Fun City </option>
-      <option>NIT Raipur</option>
-      <option>IIT Bhilai</option>
-    </select>
-   
-  
-    &nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;
-               
-    <label for="destination"> To</label>
-    <select  class="field_class_2 " name="destination" id="destination" required>
-      <option>Santoshi Nagar</option>
-      <option>Magneto Mall</option>
-      <option>Ambuja Mall</option>
-      <option>Marine Drive</option>
-      <option>City Center Mall</option>
-      <option>Railway Station</option>
-      <option>Airport</option>
-      <option>MM Fun City </option>
-      <option>NIT Raipur</option>
-      <option>IIT Bhilai</option>
-    </select>
-</div>
 
-<div>
-                <label for="time">Time</label>
-                <input class="field_class_2" name="time" type="time" required >
-                &nbsp;&nbsp;    &nbsp;&nbsp;    &nbsp;&nbsp;
-                 <label>Count</label>
-                <input class="field_class_2" name="count" type="text" placeholder="Number of people" required>
-                 </div>
-                 <label for="preferred_mode">Preferred Mode </label>
-    <select class="field_class" name="preferred_mode" id="prefered_mode">
-      <option>Cab/Taxi</option>
-      <option>Auto</option>
-     
-    </select>
-                <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">Submit</button>
+    {{>header}}
+<p></p>
+<p></p>
+<div class="center">
+    <form id="login_form" class="form_class" action="carpool" method="post">
+        <div  class="form_div">
+
+            <label>Name</label>
+            <input class="field_class" name="name" type="text" placeholder="Enter your name" required>
+            <label>Phone no</label>
+            <input class="field_class" name="phone_no" type="text" placeholder="Enter your Phone no">
+            <div>
+                <label for="source">From </label>
+                <select class="field_class_2" name="source" id="source" required>
+                    <option>Santoshi Nagar</option>
+                    <option>Magneto Mall</option>
+                    <option>Ambuja Mall</option>
+                    <option>Marine Drive</option>
+                    <option>City Center Mall</option>
+                    <option>Railway Station</option>
+                    <option>Airport</option>
+                    <option>MM Fun City </option>
+                    <option>NIT Raipur</option>
+                    <option>IIT Bhilai</option>
+                </select>
+
+
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+
+                <label for="destination"> To</label>
+                <select class="field_class_2 " name="destination" id="destination" required>
+                    <option>Santoshi Nagar</option>
+                    <option>Magneto Mall</option>
+                    <option>Ambuja Mall</option>
+                    <option>Marine Drive</option>
+                    <option>City Center Mall</option>
+                    <option>Railway Station</option>
+                    <option>Airport</option>
+                    <option>MM Fun City </option>
+                    <option>NIT Raipur</option>
+                    <option>IIT Bhilai</option>
+                </select>
             </div>
-           
-        </form>
-    </main>
+
+            <div>
+                <label for="time">Time</label>
+                <input class="field_class_2" name="time" type="time" required>
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                <label>Count</label>
+                <input class="field_class_2" name="count" type="text" placeholder="Number of people" required>
+            </div>
+            <label for="preferred_mode">Preferred Mode </label>
+            <select class="field_class" name="preferred_mode" id="prefered_mode">
+                <option>Cab/Taxi</option>
+                <option>Auto</option>
+
+            </select>
+            <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">Submit</button>
+        </div>
+
+    </form>
+    </div>
+
     <div>
         <p></p>
-        <img src="https://cliparting.com/wp-content/uploads/2016/05/Clip-art-of-car-clipart-image.png" class="center"></div>
-         
-      </div>
+        <img src="https://cliparting.com/wp-content/uploads/2016/05/Clip-art-of-car-clipart-image.png" class="center">
+    </div>
+
+    </div>
 </body>
+
 </html>
