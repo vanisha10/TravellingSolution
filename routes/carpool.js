@@ -40,7 +40,7 @@ router.post("/", async (req, res) => {
         const datasaved = await carpooltodata.save();
         console.log("data saved")
         getdocument2(req.body.source, req.body.destination);
-
+        console.log(result);
         var selected = [];
         var hrs = parseInt(req.body.time.substring(0, 2));
         var mins = parseInt(req.body.time.substring(3));
@@ -52,7 +52,7 @@ router.post("/", async (req, res) => {
             var today = new Date();
             var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
             var time2 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-
+           
             if (parseInt(time2.substring(0, 2)) > timehrs) 
             {
                 deletedata(result[i].time);
