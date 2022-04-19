@@ -52,7 +52,7 @@ router.post("/", async (req, res) => {
             var today = new Date();
             var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
             var time2 = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-           
+            
             if (parseInt(time2.substring(0, 2)) > timehrs) 
             {
                 deletedata(result[i].time);

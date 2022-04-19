@@ -112,13 +112,13 @@
     <form id="login_form" class="form_class" action="carpool" method="post">
         <div  class="form_div">
 
-            <label>Name</label>
+            {{!-- <label>Name</label> --}}
             <input class="field_class" name="name" type="text" placeholder="Enter your name" required>
-            <label>Phone no</label>
+            {{!-- <label>Phone no</label> --}}
             <input class="field_class" name="phone_no" type="text" placeholder="Enter your Phone no">
             <div>
-                <label for="source">From </label>
-                <select class="field_class_2" name="source" id="source" required>
+                {{!-- <label for="source">From </label> --}}
+                <select class="field_class" name="source" id="source" required>
                     <option>Santoshi Nagar</option>
                     <option>Magneto Mall</option>
                     <option>Ambuja Mall</option>
@@ -131,11 +131,11 @@
                     <option>IIT Bhilai</option>
                 </select>
 
+               <p align="center">To</p>
+                
 
-                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-
-                <label for="destination"> To</label>
-                <select class="field_class_2 " name="destination" id="destination" required>
+                {{!-- <label for="destination"> To</label> --}}
+                <select class="field_class " name="destination" id="destination" required>
                     <option>Santoshi Nagar</option>
                     <option>Magneto Mall</option>
                     <option>Ambuja Mall</option>
@@ -150,13 +150,13 @@
             </div>
 
             <div>
-                <label for="time">Time</label>
-                <input class="field_class_2" name="time" type="time" required>
-                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                <label>Count</label>
-                <input class="field_class_2" name="count" type="text" placeholder="Number of people" required>
+                {{!-- <label for="time">Time</label> --}}
+                <input class="field_class" name="time" type="time" required>
+                
+                {{!-- <label>Count</label> --}}
+                <input class="field_class" name="count" type="text" placeholder="Number of people" required>
             </div>
-            <label for="preferred_mode">Preferred Mode </label>
+            {{!-- <label for="preferred_mode">Preferred Mode </label> --}}
             <select class="field_class" name="preferred_mode" id="prefered_mode">
                 <option>Cab/Taxi</option>
                 <option>Auto</option>
