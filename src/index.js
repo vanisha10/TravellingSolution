@@ -34,6 +34,6 @@ app.use("/average",averageRoute);
 
 
  app.listen(port,(req,res)=>{
-    console.log(`The application is running on port http://localhost:${port}`)
+    console.log(`The application is running on port: ${port}`)
 
 });
