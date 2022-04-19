@@ -33,6 +33,7 @@ router.post("/", async (req, res) => {
             price = price + avgPrice[i].price;
         }
         price = price / n;
+        price=Math.round(price);
         console.log("cbkhdg",price);
         console.log("price is: ",price)
         res.status(201).render("average",{price: price});

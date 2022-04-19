@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+  </head>
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background-color:  #ff4c68;
+      background-color: #ff4c68;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
       background-size: cover
     }
+
     .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
 
     table {
-      
+
       border-collapse: collapse;
       width: 100%;
     }
@@ -35,52 +38,47 @@
     }
 
     th {
-      background-color:  #ff4c68;
+      background-color: #ff4c68;
       color: white;
     }
   </style>
-</head>
+
 
 <body>
-    {{>header}}
-    <p></p>
+  {{>header}}
+  <p></p>
+  
   <table style="width:100%" border="3">
     <tr>
-
-
-       <th>Name</th>
-       <th>Phone No.</th>
+      <th>Name</th>
+      <th>Phone No.</th>
       <th> From</th>
       <th>To</th>
       <th>Time</th>
       <th>Number of people</th>
-      
       <th>Preferred Mode</th>
-      
     </tr>
-         {{#each selected }}
-        <tr>  
-            {{!-- {{#if this.time=="13:25" then}} --}}
-            <td> {{this.name}}</td>
-       <td> {{this.phone_no}}</td>
-     <td> {{this.source}}</td>
-     <td> {{this.destination}}</td>
-      <td> {{this.time}}</td>
-     <td> {{this.count}}</td>
-     <td> {{this.preferred_mode}}</td>
-     </tr>
-     {{!-- {{/if}}
-     --}}
-      {{/each}}
-     
-    </tr> 
 
+    {{#each selected }}
+    <tr>
+      {{!-- {{#if this.time=="13:25" then}} --}}
+      <td> {{this.name}}</td>
+      <td> {{this.phone_no}}</td>
+      <td> {{this.source}}</td>
+      <td> {{this.destination}}</td>
+      <td> {{this.time}}</td>
+      <td> {{this.count}}</td>
+      <td> {{this.preferred_mode}}</td>
+    </tr>
+    {{/each}}
+    </tr>
   </table>
+
   <div>
     <p></p>
-    <img src="https://cliparting.com/wp-content/uploads/2016/05/Clip-art-of-car-clipart-image.png" class="center"></div>
-     
+    <img src="https://cliparting.com/wp-content/uploads/2016/05/Clip-art-of-car-clipart-image.png" class="center">
   </div>
-</body>
+  </div>
 
+</body>
 </html>
