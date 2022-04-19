@@ -32,6 +32,7 @@ router.post("/", async (req, res) => {
         getavgPrice(req.body.source, req.body.dest,"Auto");
         var n = Object.keys(avgPrice).length;
         for (var i = 0; i < n; ++i) {
+            if(avgPrice[i].price!=null)
             price1 = price1 + avgPrice[i].price;
         }
         if(n!=0)
@@ -42,7 +43,9 @@ router.post("/", async (req, res) => {
         getavgPrice(req.body.source, req.body.dest,"Cab/Taxi");
         var n = Object.keys(avgPrice).length;
         for (var i = 0; i < n; ++i) {
+            if(avgPrice[i].price!=null)
             price2 = price2 + avgPrice[i].price;
+            
         }
         if(n!=0)
         price2 = price2 / n;
