@@ -4,6 +4,8 @@ const hbs = require("hbs");
 const path = require('path');
 const mongoose=require("mongoose");
 
+
+require("dotenv").config();
 require("./db/conn.js")
 const Carpool=require("./models/Carpooldata")
 var bodyParser = require("body-parser");
